@@ -1,9 +1,11 @@
+
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   e2e: {
+    supportFile: false,  // Hier deaktivierst du die Support-Datei
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      // Hier kannst du Events hinzufügen
     },
   },
 })
